@@ -39,8 +39,8 @@ d = make_dict()
 
 while True:
     features = []
-    inp = raw_input(">")
-    if inp == "exit":
+    inp = raw_input(">").split()
+    if inp[0] == "exit":
         break
     for word in d:
         features.append(inp.count(word[0]))
